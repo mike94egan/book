@@ -1,0 +1,129 @@
+<header>
+    {{#if isAuthenticated}}
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 68px;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: width 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: width 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    </style>
+
+    <div class="topnav">
+        
+        <div class="leftalign">
+            <a href="/">
+                <img class="header-logo" src="../img/bookswap_horiz.png" alt="Icon">
+            </a>
+        </div>
+
+        <div class="rightalign">
+            <a href="/mywishlist" class="text-color navtabs">Wish List</a>
+            <a href="/userbooks/{{username}}" class="text-color navtabs">My Books</a>
+            <a href="/postbook" class="text-color navtabs">Post a Book</a>
+
+            <div style="position: relative;">
+                <div id="dvSideBarIcon" class='icon'>
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="dvSideBar" class="side-bar">
+            <a class="two" href="/mywishlist"><div class="side-bar-item">Wish List</div></a>
+            <a class="two" href="/userbooks/{{username}}" class="text-color"><div class="side-bar-item">My Books</div></a>
+            <a class="two" href="/postbook" class="text-color"><div class="side-bar-item">Post a Book</div></a>
+            <div class="side-bar-item">Contact History</div>
+            <a class="two" href="/howitworks"><div class="side-bar-item">How It Works</div></a>
+            <a class="two" href="/faq"><div class="side-bar-item">FAQ</div></a>
+            <a class="two" href="/participatingunis"><div class="side-bar-item">Participating Universities</div></a>
+            <a class="two" href="/contactus"><div class="side-bar-item">Contact Us</div></a>
+            <a class="two" href="/aboutus"><div class="side-bar-item">About Us</div></a>
+            <a class="two" href="/tc"><div class="side-bar-item">Terms & Conditions</div></a>
+            <a class="two" href="/logout" class="text-color"><div class="side-bar-item">Sign Out</div></a>
+        </div>
+
+    </div>
+    {{#if (secondHeader url)}}
+    <div>
+        <div class="topnav">
+            <div class="form-container-search">
+                <table>
+                    <tr>
+                        <td>
+                            <form method="GET" action="/searchresults">
+            	                <div class="text-center">
+                                    <div class="input-group-lg" style="display: table;">
+                                        <input type="text" class="form-control text-center width170 index" {{#if search}}value={{search}}{{/if}} required name="search" id="round-inputleft" placeholder="ISBN, Author or Title">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-lg" id="round-inputright" type="submit">
+                                                <span class="glyphicon glyphicon-search" id="search-dimension" aria-hidden="true"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <div class="text-color">Or</div>
+                        </td>
+                        <form method="GET" action="/searchresults">
+                            <td>
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control input-lg text-center width240 index" {{#if university}}value='{{university}}'{{/if}} required name="university" id="round" placeholder="College or University">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control input-lg text-center width240 index" {{#if department}}value={{department}}{{/if}} required name="department" id="round" placeholder="Subject or Department">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group-lg" style="display: table;">
+                                    <input type="text" class="form-control text-center width185 index" {{#if course}}value={{course}}{{/if}} required name="course" id="round-inputleft" placeholder="Course or Course Number">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-lg" id="round-inputright" type="submit">
+                                                <span class="glyphicon glyphicon-search" id="search-dimension" aria-hidden="true"></span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </td>
+                        </form>
+                    </tr>    
+                </table>
+                <div class="text-color">*All Fields Required</div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{/if}}   
+</header>

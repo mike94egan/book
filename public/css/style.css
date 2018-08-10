@@ -1,0 +1,525 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; 
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-color{
+  color: #fff;
+}
+
+.text-color2{
+  color: #1B4A97 !important;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /*height: 94px;*/
+  background-color: #004F8B ;
+  overflow: hidden;
+  border-bottom: 1px solid #5B8BBE;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a.navtabs {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a.navtabs:hover {
+  background-color: #004F8B ;
+  color: #F4D10D;
+}
+
+/* Add a color to the active/current link */
+.topnav a.navtabs:active {
+  background-color: #004F8B ;
+  color: #F4D10D;
+}  
+
+.topnav a.two {
+  font-size: 16px;
+  color: #1B4A97 !important; 
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rightalign{
+    display: inline-block;
+    float: right;
+    margin-top: 20px; margin-right: 100px;
+}
+
+.leftalign{
+  display: inline-block;
+  text-align-last: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 10px;
+}
+
+
+/* Hamburger Menu Icon styling */
+
+.icon {
+  position: absolute;
+  top: -11px; right: -34%;
+  width: 60px; height: 60px;
+
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px; height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+
+.hamburger:before, .hamburger:after {
+  content: '';
+  position: absolute;
+  width: 25px; height: 3px;
+  background: #fff;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.2);*/
+  transition: 0.4s;
+}
+
+.hamburger:before {
+  top: -6px;
+}
+
+.hamburger:after {
+  top: 6px;
+}
+
+.icon.active .hamburger {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+
+
+/* Hamburger / Side Bar Menu styling */
+.side-bar {
+  display: block;
+  width: 320px;
+  position: absolute; 
+  right: -320px;
+  background: #fff;
+  transition: right .4s;
+  z-index: 1;
+  border: 1px solid #1B4A97;
+  border-bottom: none !important;
+  /*overflow-x: hidden;*/
+}
+
+.side-bar-active {
+  right: 0 !important;
+  transition: right .4s;
+}
+
+.side-bar-item {
+    font-size: 16px;
+    color: #1B4A97 !important; 
+    padding: 8px 25px;
+    border-bottom: 1px solid #1B4A97;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.side-bar-item:hover {
+  background: #E8E8E8;
+}
+
+
+
+.hero-img-block {
+  margin: 50px auto; padding-bottom: 40px;
+}
+
+.hero-img-element {
+  display: inline-block; width: 26%; margin: 0 3.57%; padding: 0px; border: 1px solid #fff;
+}
+
+.hero-img-element:hover {
+  opacity: 0.8;
+}
+
+
+
+.body-logo {
+  width: 280px; 
+}
+
+.login-logo {
+	width: 300px;
+	padding: 0 10px 0 0;
+}
+
+.register-logo {
+	width: 300px;
+	padding: 0 10px 0 0;
+}
+
+.header-logo {
+	width: 220px;
+}
+
+.index-nav a {
+  display: inline-block;
+  margin: 0 3px; }
+
+.bookswap-body {
+  background-color: #004F8B;
+  overflow-x: hidden;
+ }
+
+.bookswap-body-white{
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 28px; font-weight: 300;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+.font300 {
+  font-weight: 300 !important;
+}
+
+
+.font22 {
+	font-size: 22px !important;
+}
+
+.font14 {
+	font-size: 14px !important;
+}
+
+.block-element {
+  display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.width100 {
+  width: 100%;
+}
+.width170 {
+  width: 170px !important;
+}
+
+.width185 {
+  width: 185px !important;
+}
+
+.width240 {
+  width: 240px !important;
+}
+
+.width600 {
+	width: 600px;
+}
+
+
+.glyphicon-search {
+    top: 2px !important;
+    right: 3px !important;
+}
+.form-control {
+  border: 1px solid #fff !important;
+  box-shadow: none !important; 
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-container-search {
+	max-width: 70%;
+	margin: auto;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #004F8B inset;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+}
+
+.login-bookswap-textField {
+
+  /*padding: 6px 12px;*/
+ 	padding: .375rem .75rem;
+    padding: 0 15px;
+
+ 	font-size: 14px; font-weight: normal; line-height: 1; text-align: left;
+	border: 1px solid #fff !important;
+
+    display: block;
+    width: 95%;
+    /*padding: .375rem .75rem;*/
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #fff;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    
+    /* border: 1px solid #fff; */
+    border-bottom: 1px solid #fff;
+    background: #004F8B !important;
+}
+
+.register-bookswap-icon {
+  margin: auto;
+  width: 300px;
+}
+
+.register-bookswap-textField {
+
+    display: block;
+    width: 95%;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin-bottom: 1px !important;
+    /*border: 1px solid #fff;*/
+    border-bottom: 1px solid #fff;
+
+    background: #004F8B !important;
+}
+
+.register-bookswap-label {
+	color: #fff;
+}
+
+.sign-in-button {
+    height: 50px; width: 150px;
+    color: #fff;
+    background-color: #429cdb;
+    border-color: #429cdb !important;
+}
+
+.sold-book-button {
+  color: #214D93 !important;
+	border: 1px solid #214D93 !important;;
+	background-color: #F1F1F1;
+	margin-top: 10px;
+}
+
+.forgot-password {
+	cursor: pointer;
+}
+
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+.pt-15 {
+  padding-top: 15px !important;
+}
+.pt-30 {
+  padding-top: 30px !important;
+}
+.pt-40 {
+  padding-top: 40px !important;
+}
+.pt-50 {
+  padding-top: 50px !important;
+}
+.pt-60 {
+  padding-top: 60px !important;
+}
+.pt-100 {
+  padding-top: 100px !important;
+}
+
+.pr-10 {
+  padding-right: 10px !important;
+}
+
+.pb-10 {
+	padding-bottom: 10px !important;
+}
+.pb-15 {
+	padding-bottom: 15px !important;
+}
+.pb-20 {
+	padding-bottom: 20px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.ml-30 {
+  margin-left: 30px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+
+input.index::placeholder {
+    color:  rgb(0, 79, 139);
+    opacity: 1; 
+    text-align: center;/* Firefox */
+}
+
+input#login::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+#round {
+	border-radius: 32px;
+}
+
+#round-inputleft {
+  border-radius: 32px 0 0 32px;
+}
+
+#round-inputright {
+  border-radius: 0 32px 32px 0;
+}
+
+#search-dimension{
+  height:21px;
+  width:14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(0, 79, 139);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(0, 79, 139);
+}
+
+
+
+.bookswap-container {
+  /*overflow-x: hidden;*/
+	text-align: center;
+	max-width: 960px;
+	margin: auto;
+}
+
+.faq-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.faq-container h2{
+  padding: 10px 10px 10px 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.faq-container p{
+  padding: 0 0 25px 0;
+  font-size: 14px;
+}
+
+.tc-container {
+  /*overflow-x: hidden;*/
+	max-width: 960px;
+	margin: auto;
+}
+
+.tc-container h2 {
+	padding: 10px 10px 10px 0;
+  margin: 0;
+}
+
+.tc-container p {
+	padding: 0 0 25px 0;
+	font-size: 14px;
+}
+
+.founder-img {
+  width: 300px; border-radius: 50%; margin-right: 50px
+}
+
+.founding-team-img {
+  width: 200px; border-radius: 50%; margin-right: 50px;
+}
+
+.aboutus-container {
+  overflow-x: hidden;
+  margin: auto; text-align: center;
+}
